@@ -17,65 +17,83 @@
   </head>
   <body>
     <div class="container text-center">
-      <div class="row border">
-        <div class="col-12">
-          <div><input class="display" type="text" id="output"></div>
+      <div class="row">
+        <div class="col-9 p-1">
+          <div>
+            <input class="display-top" type="text" id="output1" disabled/>
+          </div>
+          <input class="display-bottom" type="text" id="output2" disabled>
         </div>
       </div>
-      <div class="row border">
-        <div class="col-3">
-          <div class="button"><input type="button" value="1" onclick="addToSum('1')"></div>
+      <div class="row">
+        <div class="col-6 p-1">
+          <input class="clear" type="button" value="AC" onclick="clearSum()" />
         </div>
-        <div class="col-3">
-          <div class="button"><input type="button" value="2" onclick="addToSum('2')"></div>
+        <div class="col-3 p-1">
+          <input type="button" value="DEL" onclick="del()"  />
         </div>
-        <div class="col-3">
-          <div class="button"><input type="button" value="3" onclick="addToSum('3')"></div>
-        </div>
-        <div class="col-3">
-          <div class="button"><input class="clear" type="button" value="C" onclick="clearSum()"></div>
+        <div class="col-3 gx-4 p-1">
+          <input type="button" value="&divide;" id="operator" onclick="addToSum('/'); disabled = true;"  />
         </div>
       </div>
-      <div class="row border">
-        <div class="col-3">
-          <div class="button"><input type="button" value="4" onclick="addToSum('4')"></div>
+      <div class="row">
+        <div class="col-3 gx-4 p-1">
+          <input type="button" value="7" onclick="addToSum('7')" />
         </div>
-        <div class="col-3">
-          <div class="button"><input type="button" value="5" onclick="addToSum('5')"></div>
+        <div class="col-3 gx-4 p-1">
+          <input type="button" value="8" onclick="addToSum('8')" />
         </div>
-        <div class="col-3">
-          <div class="button"><input type="button" value="6" onclick="addToSum('6')"></div>
+        <div class="col-3 gx-4 p-1">
+          <input type="button" value="9" onclick="addToSum('9')" />
         </div>
-        <div class="col-3">
-          <div class="button"><input type="button" value="/" onclick="addToSum('/')"></div>
-        </div>
-      </div>
-      <div class="row border">
-        <div class="col-3">
-          <div class="button"><input type="button" value="7" onclick="addToSum('7')"></div>
-        </div>
-        <div class="col-3">
-          <div class="button"><input type="button" value="8" onclick="addToSum('8')"></div>
-        </div>
-        <div class="col-3">
-          <div class="button"><input type="button" value="9" onclick="addToSum('9')"></div>
-        </div>
-        <div class="col-3">
-          <div class="button"><input type="button" value="*" onclick="addToSum('*')"></div>
+        <div class="col-3 gx-4 p-1">
+          <input type="button" value="+" id="operator" onclick="addToSum('+'); disabled = true;" />
         </div>
       </div>
-      <div class="row border">
-        <div class="col-3">
-          <div class="button"><input type="button" value="-" onclick="addToSum('-')"></div>
+
+      <div class="row">
+        <div class="col-3 gx-4 p-1">
+          <input type="button" value="4" onclick="addToSum('4')" />
         </div>
-        <div class="col-3">
-          <div class="button"><input type="button" value="0" onclick="addToSum('0')"></div>
+        <div class="col-3 gx-4 p-1">
+          <input type="button" value="5" onclick="addToSum('5')" />
         </div>
-        <div class="col-3">
-          <div class="button"><input type="button" value="." onclick="addToSum('.')"></div>
+        <div class="col-3 gx-4 p-1">
+          <input type="button" value="6" onclick="addToSum('6')" />
         </div>
-        <div class="col-3">
-          <div class="button"><input class="submit" type="button" value="=" onclick="evaluateSum()"></div>
+        <div class="col-3 gx-4 p-1">
+          <input type="button" value="&times;" id="operator" onclick="addToSum('*'); disabled = true;" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 gx-4 p-1">
+          <input type="button" value="1" onclick="addToSum('1')" />
+        </div>
+        <div class="col-3 gx-4 p-1">
+          <input type="button" value="2" onclick="addToSum('2')" />
+        </div>
+        <div class="col-3 gx-4 p-1">
+          <input type="button" value="3" onclick="addToSum('3')" />
+        </div>
+        <div class="col-3 gx-4 p-1">
+          <input type="button" value="&minus;" id="operator" onclick="addToSum('-'); disabled = true;" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 p-1">
+          <input type="button" value="&comma;" id="operator" onclick="addToSum('.')" />
+        </div>
+        <div class="col-3 gx-4 p-1">
+          <input type="button" value="0" onclick="addToSum('0')" />
+        </div>
+        <div class="col-6 p-1">
+          <input
+            class="submit"
+            type="button"
+            value="&equals;"
+            onclick="evaluateSum()"
+            style="background-color: crimson;"
+          />
         </div>
       </div>
     </div>
