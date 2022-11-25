@@ -33,7 +33,7 @@
           <input type="button" value="DEL" onclick="del()"  />
         </div>
         <div class="col-3 gx-4 p-1">
-          <input type="button" value="&divide;" id="operator" onclick="addToSum('/'); disabled = true;"  />
+          <input type="button" value="&divide;" id="slash" class="operator" onclick="addToSum('/'); disabled = true;"  />
         </div>
       </div>
       <div class="row">
@@ -47,7 +47,7 @@
           <input type="button" value="9" onclick="addToSum('9')" />
         </div>
         <div class="col-3 gx-4 p-1">
-          <input type="button" value="+" id="operator" onclick="addToSum('+'); disabled = true;" />
+          <input type="button" value="&plus;" id="add" class="operator" onclick="addToSum('+'); disabled = true;" />
         </div>
       </div>
 
@@ -62,7 +62,7 @@
           <input type="button" value="6" onclick="addToSum('6')" />
         </div>
         <div class="col-3 gx-4 p-1">
-          <input type="button" value="&times;" id="operator" onclick="addToSum('*'); disabled = true;" />
+          <input type="button" value="&times;" id="times" class="operator" onclick="addToSum('*'); disabled = true;" />
         </div>
       </div>
       <div class="row">
@@ -76,12 +76,12 @@
           <input type="button" value="3" onclick="addToSum('3')" />
         </div>
         <div class="col-3 gx-4 p-1">
-          <input type="button" value="&minus;" id="operator" onclick="addToSum('-'); disabled = true;" />
+          <input type="button" value="&minus;" id="minus" class="operator" onclick="addToSum('-'); disabled = true;" />
         </div>
       </div>
       <div class="row">
         <div class="col-3 p-1">
-          <input type="button" value="&comma;" id="operator" onclick="addToSum('.')" />
+          <input type="button" value="&comma;" id="dot" onclick="addToSum('.'); disabled = true;" />
         </div>
         <div class="col-3 gx-4 p-1">
           <input type="button" value="0" onclick="addToSum('0')" />
