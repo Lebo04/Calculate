@@ -9,27 +9,20 @@ body {
   display: flex;
   justify-content: center;
   align-self: center;
+  height: 100vh;
+  background: url('https://i.postimg.cc/5tCFwNdt/palette-calculator-bow-red-background-23-2148182111.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
-  line-height: 80px;
+  line-height: 70px;
+  height: 610px;
   border: solid;
   border-radius: 15px;
-  width: 400px;
+  width: 350px;
   margin: 0px;
-  /* margin-top: 60px; */
   background: linear-gradient(to right, #cbce91ff, #ea738dff);
-}
-
-.display #top {
-  /* color: rgba(70, 68, 68, 0.75); */
-  font-size: 1.5rem;
-  word-wrap: break-word;
-}
-
-.display #bottom {
-  color: white;
-  font-size: 2.5rem;
 }
 
 input[type="button"] {
@@ -42,6 +35,10 @@ input[type="button"] {
 
 .display-top {
     color: rgb(55, 54, 54);
+    word-wrap: break-word;
+}
+.display-bottom {
+  color: #111;
 }
 
 .display-top,
@@ -51,7 +48,6 @@ input[type="button"] {
   text-align: right;
   font-size: 25px;
   height: 90px;
-  word-wrap: break-word;
 }
 
 input[type="button"]:hover {
@@ -64,28 +60,16 @@ input[type="button"]:hover {
   }
 }
 
-/* @media screen and (max-width: 300px) {
+@media screen and (min-width:1000px) and ( max-width: 1200px) {
   .container {
-    line-height: 84.8px;
-    border-radius: 1px;
-    width: 100%;
-    margin-top: 00px;
+    scale: 1.4;
+    margin-top: 90px;
+    height: 460px;
+    line-height: 50px;
+    width: 300px;
   }
   .display-top,
 .display-bottom {
-  height: 93px;
+  height: 60px;
 }
 }
-
-@media screen and (max-width: 400px) {
-  .container {
-    line-height:120px;
-    border-radius: 1px;
-    width: 100%;
-    margin-top: 00px;
-  }
-  .display-top,
-.display-bottom {
-  height: 100px;
-}
-} */

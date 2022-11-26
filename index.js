@@ -1,5 +1,6 @@
 let sum = "";
 let view = document.getElementById("output1").value;
+let operators = ["+", "-", ".", "*", "/"];
 
 function addToSum(value) {
   document.getElementById("output1").value += value;
@@ -45,10 +46,16 @@ function addToSum(value) {
       break;
   }
 
-  if (view.endsWith("/")) {
-    view.replace(operator);
-  }
+ 
+
+  // for (i = 0; i < operators.length; i++) {
+  //   if (view.endsWith(operators[i])) {
+  //     view.replace(operators[i], operators[i]);
+  //     return view;
+  //   }
+  // }
 }
+
 
 function evaluateSum() {
   let x = document.getElementById("output1").value;
@@ -70,3 +77,5 @@ function del() {
   display = view.slice(0, -1);
   document.getElementById("output1").value = display;
 }
+
+
