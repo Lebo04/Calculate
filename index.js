@@ -56,7 +56,7 @@ function addToSum(value) {
   // }
 }
 
-
+ 
 function evaluateSum() {
   let x = document.getElementById("output1").value;
   sum = eval(x);

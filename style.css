@@ -8,7 +8,7 @@
 body {
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
   height: 100vh;
   background: url('https://i.postimg.cc/5tCFwNdt/palette-calculator-bow-red-background-23-2148182111.webp');
   background-repeat: no-repeat;
@@ -35,7 +35,6 @@ input[type="button"] {
 
 .display-top {
     color: rgb(55, 54, 54);
-    word-wrap: break-word;
 }
 .display-bottom {
   color: #111;
@@ -48,13 +47,14 @@ input[type="button"] {
   text-align: right;
   font-size: 25px;
   height: 90px;
+  word-wrap: break-word;
 }
 
 input[type="button"]:hover {
   background-color: rgb(235, 176, 188);
 }
 
-@media screen and (max-width: 310px) {
+/* @media screen and (max-width: 310px) {
   .container {
     scale: 0.95;
   }
@@ -72,4 +72,5 @@ input[type="button"]:hover {
 .display-bottom {
   height: 60px;
 }
-}
+
+} */
